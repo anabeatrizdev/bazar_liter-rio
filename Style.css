@@ -1,0 +1,49 @@
+:root{
+  --purple-dark: #6a1b9a;
+  --purple: #7b1fa2;
+  --purple-light: #9c27b0;
+  --white: #ffffff;
+  --muted: #6c6c6c;
+}
+
+.navbar-custom{
+  background: linear-gradient(90deg, var(--purple-dark), var(--purple));
+}
+
+.hero{
+  background: linear-gradient(180deg, var(--purple), var(--purple-light));
+  color: var(--white);
+}
+
+.card-title{ 
+  color: var(--purple-dark); 
+  font-weight: bold; 
+}
+
+.price{ 
+  color: var(--purple-dark); 
+  font-weight: bold; 
+}
+
+.card-image{ 
+  height: 260px; 
+  object-fit: cover; 
+}
+
+.btn-pix{
+  background: linear-gradient(90deg, var(--purple), var(--purple-dark));
+  color: var(--white);
+  font-weight: 600;
+  border: none;
+}
+
+.btn-pix:hover{ 
+  filter: brightness(0.9); 
+}
+
+.btn-close-modal{
+  background: var(--purple-light);
+  color: var(--white);
+  border: none;
+  padding: .35rem .8rem;
+}
