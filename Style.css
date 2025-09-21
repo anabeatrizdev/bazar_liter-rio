@@ -30,7 +30,7 @@
   height: 400px;
   object-fit: contain;
   border-radius: 6px;
-  background-color: var(--white); /* Adicionado um fundo branco para preencher o espaço */
+  background-color: var(--white);
 }
 
 .btn-pix{
