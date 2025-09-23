@@ -25,9 +25,12 @@
   font-weight: bold; 
 }
 
-.card-image{ 
-  height: 260px; 
-  object-fit: cover; 
+.card-image { 
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 6px;
+  background-color: var(--white);
 }
 
 .btn-pix{
@@ -46,4 +49,20 @@
   color: var(--white);
   border: none;
   padding: .35rem .8rem;
+}
+
+.navbar-logo {
+  height: 60px;
+  width: auto;
+}
+
+main {
+  margin-top: 40px; 
+}
+
+/* Ajuste de responsividade para telas menores */
+@media (max-width: 768px) {
+  .card-image {
+    height: 300px; 
+  }
 }
