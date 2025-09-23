@@ -25,23 +25,10 @@
   font-weight: bold; 
 }
 
-/* ===== OPÇÃO 1: COVER (corta um pouco, mas ocupa todo espaço) ===== */
-.card-image.cover { 
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 6px;
-  border: 1px solid red; /* Linha de ajuda para ver os limites */
-}
-
-/* ===== OPÇÃO 2: CONTAIN (não corta, mas pode sobrar espaço) ===== */
-.card-image.contain { 
-  width: 100%;
-  height: 400px;
+.card-image{ 
+  height: 260px; 
   object-fit: contain;
-  border-radius: 6px;
-  background: #fff; /* fundo branco para não ficar vazio */
-  border: 1px solid red; /* Linha de ajuda para ver os limites */
+  background-color: var(--white);
 }
 
 .btn-pix{
@@ -66,8 +53,6 @@
   height: 60px;
   width: auto;
 }
-
-
 
 main {
   margin-top: 40px; 
