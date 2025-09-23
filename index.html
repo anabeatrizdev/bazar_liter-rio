@@ -5,22 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>📚 Bazar Literário</title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/Logo navegador.png"/>
 
-  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">📚 Bazar Literário</a>
+      <a class="navbar-brand fw-bold" href="#">
+        <img src="img/LOGO.png" alt="Logo Bazar Literário" class="navbar-logo me-2">
+        Bazar Literário
+      </a>
     </div>
   </nav>
 
-  <!-- Hero -->
   <header class="hero text-center text-white py-5">
     <div class="container">
       <h1 class="fw-bold">Bem-vindo ao Bazar Literário</h1>
@@ -28,27 +29,36 @@
     </div>
   </header>
 
-  <!-- Produtos -->
   <main class="py-5">
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
 
-        <!-- Livro 1 -->
         <div class="col">
           <div class="card h-100 shadow-sm">
-            <div id="livro1" class="carousel slide">
-              <div class="carousel-inner">
+            <div id="livro1-carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner p-3">
                 <div class="carousel-item active">
-                  <img src="img/Livro 1 Frente.jpeg" class="d-block w-100 card-image" alt="Biblioteca da Meia-Noite Frente">
+                  <img src="img/Livro 1 Frente.jpeg" class="d-block w-100 card-image" alt="A Biblioteca da Meia-Noite - Frente">
                 </div>
                 <div class="carousel-item">
-                  <img src="img/Livro 1 Verso.jpeg" class="d-block w-100 card-image" alt="Biblioteca da Meia-Noite Verso">
+                  <img src="img/Livro 1 Verso.jpeg" class="d-block w-100 card-image" alt="A Biblioteca da Meia-Noite - Verso">
                 </div>
               </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#livro1-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#livro1-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
             <div class="card-body">
               <h5 class="card-title">A Biblioteca da Meia-Noite</h5>
               <p class="price">R$ 35,00</p>
+              <p class="card-text small text-muted">
+                Uma jornada emocionante entre vida e morte. Nora Seed descobre uma biblioteca mágica onde cada livro mostra uma vida diferente que poderia ter vivido.
+              </p>
               <button class="btn btn-pix w-100" data-book="A Biblioteca da Meia-Noite" data-price="R$ 35,00" data-bs-toggle="modal" data-bs-target="#pixModal">
                 Comprar via PIX
               </button>
@@ -56,141 +66,240 @@
           </div>
         </div>
 
-        <!-- Livro 2 -->
         <div class="col">
           <div class="card h-100 shadow-sm">
-            <div id="livro2" class="carousel slide">
-              <div class="carousel-inner">
+            <div id="livro2-carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner p-3">
                 <div class="carousel-item active">
-                  <img src="img/Livro 2 Frente .jpeg" class="d-block w-100 card-image" alt="Clube do Livro dos Homens 
-                  ">
+                  <img src="img/Livro 2 Frente.jpg" class="d-block w-100 card-image" alt="Clube do Livro dos Homens - Frente">
                 </div>
                 <div class="carousel-item">
-                  <img src="img/Livro 2 Verso.jpeg" class="d-block w-100 card-image" alt="Clube do Livro dos Homens Verso">
+                  <img src="img/Livro 2 Verso.jpeg" class="d-block w-100 card-image" alt="Clube do Livro dos Homens - Verso">
                 </div>
               </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#livro2-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#livro2-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
             <div class="card-body">
               <h5 class="card-title">Clube do Livro dos Homens</h5>
-              <p class="price">R$ 30,00</p>
-              <button class="btn btn-pix w-100" data-book="Clube do Livro dos Homens" data-price="R$ 30,00" data-bs-toggle="modal" data-bs-target="#pixModal">
-                Comprar via PIX
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Livro 3 -->
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <div id="livro3" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/Livro 3 Frente.jpeg" class="d-block w-100 card-image" alt="O conto da Aia Frente">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/Livro 3 Verso.jpeg" class="d-block w-100 card-image" alt="O conto da Aia  Verso">
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">O conto da Aia </h5>
               <p class="price">R$ 28,00</p>
-              <button class="btn btn-pix w-100" data-book="O conto da Aia" data-price="R$ 28,00" data-bs-toggle="modal" data-bs-target="#pixModal">
+              <p class="card-text small text-muted">
+                Uma comédia romântica envolvente onde um grupo secreto de homens lê romances para entender melhor o amor e transformar suas próprias vidas. <strong>Acompanha marcador de página.</strong>
+              </p>
+              <button class="btn btn-pix w-100" data-book="Clube do Livro dos Homens" data-price="R$ 28,00" data-bs-toggle="modal" data-bs-target="#pixModal">
                 Comprar via PIX
               </button>
             </div>
           </div>
         </div>
 
-        <!-- Livro 4 -->
         <div class="col">
           <div class="card h-100 shadow-sm">
-            <div id="livro4" class="carousel slide">
-              <div class="carousel-inner">
+            <div id="livro3-carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner p-3">
                 <div class="carousel-item active">
-                  <img src="img/Livro 4 Frente.jpeg" class="d-block w-100 card-image" alt="Você me ganhou no Olá Frente">
+                  <img src="img/Livro 3 Frente.jpeg" class="d-block w-100 card-image" alt="O Conto da Aia - Frente">
                 </div>
                 <div class="carousel-item">
-                  <img src="img/Livro 4 Verso.jpeg" class="d-block w-100 card-image" alt="Você me ganhou no Olá Verso">
+                  <img src="img/Livro 3 Verso.jpg" class="d-block w-100 card-image" alt="O Conto da Aia - Verso">
                 </div>
               </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#livro3-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#livro3-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Você me ganhou no Olá </h5>
-              <p class="price">R$ 32,00</p>
-              <button class="btn btn-pix w-100" data-book="Cool for Summer" data-price="R$ 32,00" data-bs-toggle="modal" data-bs-target="#pixModal">
+              <h5 class="card-title">O conto da Aia</h5>
+              <p class="price">R$ 31,00</p> 
+              <p class="card-text small text-muted">
+                Distopia marcante de Margaret Atwood que retrata uma sociedade totalitária onde mulheres perdem seus direitos e são reduzidas a funções reprodutivas.
+              </p>
+              <button class="btn btn-pix w-100" data-book="O conto da Aia" data-price="R$ 31,00" data-bs-toggle="modal" data-bs-target="#pixModal">
                 Comprar via PIX
               </button>
             </div>
           </div>
         </div>
 
-        <!-- Livro 5 -->
         <div class="col">
           <div class="card h-100 shadow-sm">
-            <img src="img/Livro 5 Frente.jpeg" class="card-img-top card-image" alt="Cool for the Summer Frente">
+            <div id="livro4-carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner p-3">
+                <div class="carousel-item active">
+                  <img src="img/Livro 4 Frente.jpeg" class="d-block w-100 card-image" alt="Você me ganhou no Olá - Frente">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Livro 4 Verso.jpeg" class="d-block w-100 card-image" alt="Você me ganhou no Olá - Verso">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#livro4-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#livro4-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Você me ganhou no Olá</h5>
+              <p class="price">R$ 28,00</p>
+              <p class="card-text small text-muted">
+                Uma história divertida e apaixonante sobre reencontros inesperados, segundas chances e o poder de dizer “olá” no momento certo.
+              </p>
+              <button class="btn btn-pix w-100" data-book="Você me ganhou no Olá" data-price="R$ 28,00" data-bs-toggle="modal" data-bs-target="#pixModal">
+                Comprar via PIX
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div id="livro5-carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner p-3">
+                <div class="carousel-item active">
+                  <img src="img/Livro 5 Frente.jpeg" class="d-block w-100 card-image" alt="Cool for the Summer - Frente">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Livro 5 Verso.jpeg" class="d-block w-100 card-image" alt="Cool for the Summer - Verso">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#livro5-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#livro5-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
             <div class="card-body">
               <h5 class="card-title">Cool for the Summer</h5>
-              <p class="price">R$ 27,00</p>
-              <button class="btn btn-pix w-100" data-book="Cool for the Summer" data-price="R$ 27,00" data-bs-toggle="modal" data-bs-target="#pixModal">
+              <p class="price">R$ 28,00</p>
+              <p class="card-text small text-muted">
+                Romance jovem e leve que mistura amizade, descobertas pessoais e um verão inesquecível que pode mudar tudo.
+              </p>
+              <button class="btn btn-pix w-100" data-book="Cool for the Summer" data-price="R$ 28,00" data-bs-toggle="modal" data-bs-target="#pixModal">
                 Comprar via PIX
               </button>
             </div>
           </div>
         </div>
 
-        <!-- Livro 6 -->
         <div class="col">
           <div class="card h-100 shadow-sm">
-            <div id="livro6" class="carousel slide">
-              <div class="carousel-inner">
+            <div id="livro6-carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner p-3">
                 <div class="carousel-item active">
-                  <img src="img/Livro 6 Frente.jpeg" class="d-block w-100 card-image" alt="A Volta ao Mundo em 80 dias Frente">
+                  <img src="img/Livro 6 Frente.jpeg" class="d-block w-100 card-image" alt="A Volta ao Mundo em 80 dias - Frente">
                 </div>
                 <div class="carousel-item">
-                  <img src="img/Livro 6 Verso.jpeg" class="d-block w-100 card-image" alt="A Volta ao Mundo em 80 dias Verso">
+                  <img src="img/Livro 6 Verso.jpeg" class="d-block w-100 card-image" alt="A Volta ao Mundo em 80 dias - Verso">
                 </div>
               </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#livro6-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#livro6-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
             <div class="card-body">
               <h5 class="card-title">A Volta ao Mundo em 80 dias</h5>
-              <p class="price">R$ 33,00</p>
-              <button class="btn btn-pix w-100" data-book="A Volta ao Mundo em 80 dias" data-price="R$ 33,00" data-bs-toggle="modal" data-bs-target="#pixModal">
+              <p class="price">R$ 24,00</p>
+              <p class="card-text small text-muted">
+                Clássico de Júlio Verne sobre a aventura de Phileas Fogg, que aposta ser capaz de dar a volta ao mundo em apenas 80 dias.
+              </p>
+              <button class="btn btn-pix w-100" data-book="A Volta ao Mundo em 80 dias" data-price="R$ 24,00" data-bs-toggle="modal" data-bs-target="#pixModal">
                 Comprar via PIX
               </button>
             </div>
           </div>
         </div>
 
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div id="livro7-carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner p-3">
+                <div class="carousel-item active">
+                  <img src="img/O colecionador - Capa.jpg" class="d-block w-100 card-image" alt="O colecionador - Capa">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/O colecionador - Lateral.jpg" class="d-block w-100 card-image" alt="O colecionador - Lateral">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/O colecionador - Verso.jpg" class="d-block w-100 card-image" alt="O colecionador - Verso">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#livro7-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#livro7-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">O colecionador</h5>
+              <p class="price">R$ 28,00</p>
+              <p class="card-text small text-muted">
+                Edição em capa dura. Thriller psicológico clássico de John Fowles, conta a história de um homem solitário obcecado por uma jovem estudante, explorando os limites da mente humana e do controle.
+              </p>
+              <button class="btn btn-pix w-100" data-book="O colecionador" data-price="R$ 28,00" data-bs-toggle="modal" data-bs-target="#pixModal">
+                Comprar via PIX
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
 
-  <!-- Modal PIX -->
   <div class="modal fade" id="pixModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-sm modal-dialog-centered">
       <div class="modal-content text-center p-3">
         <h5 class="fw-bold">Pagamento via PIX</h5>
-        <p id="selectedBook" class="small text-muted">Item: —</p>
-        <img src="img/qrcode_pix.png" alt="QR Code PIX" class="img-fluid mb-3" style="max-width:220px;">
+        <p id="selectedBook" class="small text-muted mb-1">Item: —</p>
+        <p class="price-modal" id="selectedPrice"></p>
+        <img src="img/QR CODE.jpg" alt="QR Code PIX" class="img-fluid mb-3" style="max-width:220px;">
         <p class="mb-1">Chave PIX:</p>
         <div class="d-flex gap-2 justify-content-center mb-3">
           <input id="pixKey" class="form-control form-control-sm text-center" value="seuemail@pix.com" readonly>
           <button id="copyPix" class="btn btn-outline-secondary btn-sm">Copiar</button>
         </div>
-        <button class="btn btn-close-modal btn-sm" data-bs-dismiss="modal">Fechar</button>
+
+        <hr>
+        <p class="small text-muted mb-2">
+          Faça o pagamento e envie o comprovante para combinar a entrega. **Consulte a taxa de entrega.**
+        </p>
+        <a href="https://wa.me/5569993820325?text=Olá! Acabei de fazer um pedido no Bazar Literário e gostaria de combinar a entrega." class="btn btn-success btn-sm w-100" target="_blank">
+          Enviar comprovante via WhatsApp
+        </a>
+        <button class="btn btn-close-modal btn-sm mt-2" data-bs-dismiss="modal">Fechar</button>
       </div>
     </div>
   </div>
 
-  <!-- Footer -->
   <footer class="text-center py-4 border-top">
-    <p class="mb-1">📍 Entrega apenas em Porto Velho. | WhatsApp: (69) 9 9382-0325</p>
+    <p class="mb-1">📍 Entrega apenas em Porto Velho.</p>
     <small class="text-muted">© Bazar Literário</small>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
