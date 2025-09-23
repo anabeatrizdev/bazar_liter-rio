@@ -66,3 +66,16 @@
   height: 60px;
   width: auto;
 }
+
+
+
+main {
+  margin-top: 40px; 
+}
+
+/* Ajuste de responsividade para telas menores */
+@media (max-width: 768px) {
+  .card-image {
+    height: 300px; 
+  }
+}
